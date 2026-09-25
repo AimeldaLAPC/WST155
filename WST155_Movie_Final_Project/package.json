@@ -1,0 +1,11 @@
+{
+  "name": "wst155-movie-final-project",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": { "start": "node server.js" },
+  "dependencies": {
+    "@neondatabase/serverless": "^1.0.0",
+    "dotenv": "^17.0.0",
+    "express": "^5.0.0"
+  }
+}

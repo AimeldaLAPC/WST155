@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Collection</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>My Movie Collection</h1>
+    <p>Final Project - Movie Collection</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2 id="form-title">Add Movie</h2>
+
+      <form id="movie-form">
+        <input type="hidden" id="movie-id">
+
+        <label for="title">Movie Title</label>
+        <input type="text" id="title" required>
+
+        <label for="genre">Genre</label>
+        <input type="text" id="genre" required>
+
+        <label for="year">Year</label>
+        <input type="number" id="year" min="1888" max="2100" required>
+
+        <button type="submit" id="save-button">Add Movie</button>
+        <button type="button" id="cancel-button" class="secondary hidden">Cancel Edit</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Movie List</h2>
+      <div id="movie-list"></div>
+    </section>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
